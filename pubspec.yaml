@@ -1,0 +1,62 @@
+name: t_connect
+description: Aplikasi Timbangan Digital dengan Bluetooth
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  reorderables: ^0.6.0 
+
+  # Bluetooth
+  flutter_bluetooth_serial: ^0.4.0
+
+  usb_serial: ^0.5.2
+  
+  # Permissions
+  permission_handler: ^11.0.1
+  device_info_plus: ^9.1.0
+
+  http: ^1.1.0
+  
+  # Database - SQLite langsung (tanpa floor)
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Settings Storage
+  shared_preferences: ^2.2.2
+
+  # Export 
+  csv: ^5.0.2
+  pdf: ^3.8.4
+  path_provider: ^2.1.1
+  open_file: ^3.3.2
+
+  # Printer (ESC/POS)
+  esc_pos_utils: ^1.1.0
+  image: ^3.3.0
+  charset_converter: ^2.1.1
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.11.0
+
+# PENTING: Letakkan di sini tanpa indentasi (level root)
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/TSR1.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
