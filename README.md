@@ -1,16 +1,62 @@
-# timbangan_bluetooth_new
+# T-Connect - Weighing Digital Scale Mobile App
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.x-blue.svg)](https://dart.dev)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Getting Started
+Flutter mobile app for digital weighing scales with Bluetooth & USB connectivity.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+✅ Bluetooth & USB Serial connection
+✅ Real-time weight monitoring
+✅ SQLite local database
+✅ Label printing (TSPL & ESC/POS)
+✅ Statistical weighing mode
+✅ Demo mode (no scale required)
+✅ Product management with counting mode
+✅ Custom field configuration
+✅ Export to CSV/PDF
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Add screenshots here]
+
+## Installation
+```bash
+flutter pub get
+flutter run
+```
+
+## Tech Stack
+
+- Flutter 3.x
+- SQLite (sqflite)
+- Bluetooth (flutter_bluetooth_serial)
+- USB Serial (usb_serial)
+- PDF generation (pdf, printing)
+```
+
+---
+
+### 2️⃣ **Add .gitignore entries** (if needed)
+
+Make sure your `.gitignore` has:
+```
+# Flutter
+build/
+.dart_tool/
+.packages
+.pub/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Android
+*.jks
+key.properties
+
+# Secrets
+.env
